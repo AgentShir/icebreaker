@@ -10,7 +10,7 @@ const config = {
     messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID
   };
 
-const app = firebase.initializeApp(config);
-const base = Rebase.createClass(app.database());
+const app = firebase.initializeApp(config)
+const base = Rebase.createClass(app.database())
 
 export default base;

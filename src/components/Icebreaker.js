@@ -1,25 +1,29 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 // Styling components
-import { Button, Container, Header } from 'semantic-ui-react';
+import { Header, Card } from 'semantic-ui-react';
+
+const items = [
+  {
+    header: 'Icebreaker 1',
+    description: 'What is your favorite color?',
+  },
+  {
+    header: 'Icebreaker 2',
+    description: 'What is your favorite animal?',
+  },
+  {
+    header: 'Icebreaker 3',
+    description: 'What is your favorite season?',
+  }
+]
+
 
 class Icebreaker extends Component {
-
-  getRandomIcebreaker = event => {
-    console.log('clicking')
-  }
-
   render() {
     return (
       <div>
-        <Container>
-          <Fragment>
-            <Header as='h1'>Icebreaker</Header>
-              <Button basic color='violet' onClick={this.getRandomIcebreaker}>
-                Get an icebreaker!
-            </Button>
-          </Fragment>
-        </Container>
+        <Card.Group items={items} />
       </div>
     )
   }

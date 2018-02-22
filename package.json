@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "enzyme-adapter-react-16": "^1.1.1",
     "firebase": "^4.9.1",
     "gulp": "^3.9.1",
     "re-base": "^3.2.2",
