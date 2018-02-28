@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
 // Styles
-import { Container, Header, Grid, Image, Segment } from 'semantic-ui-react';
+import { Container, Header, Grid, Segment } from 'semantic-ui-react';
 
 // Components
 import Icebreaker from './Icebreaker.js';
@@ -13,7 +13,7 @@ class Dashboard extends Component {
       <Container>
         <Fragment>
             <Container>
-              <Grid columns={3} divided>
+              <Grid columns={3}>
                 <Grid.Row>
                   <Grid.Column>
                       <Icebreaker />

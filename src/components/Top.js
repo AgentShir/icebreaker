@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 
-// Styles
+// Semantic UI React Components
 import { Header, Button } from 'semantic-ui-react';
+
+// Styles
+import '../styles/App.css';
 
 class Top extends Component {
 

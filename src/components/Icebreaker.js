@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 
-// Styling components
-import { Header, Card } from 'semantic-ui-react';
+// Semantic UI React Components
+import { Card } from 'semantic-ui-react';
+
+// Styles
+import '../styles/App.css';
 
 const items = [
   {
