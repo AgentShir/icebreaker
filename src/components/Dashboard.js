@@ -1,7 +1,10 @@
 import React, { Component, Fragment } from 'react';
 
-// Styles
+// Semantic UI React Components
 import { Container, Header, Grid, Segment } from 'semantic-ui-react';
+
+// Styles
+import '../styles/App.css';
 
 // Components
 import Icebreaker from './Icebreaker.js';
