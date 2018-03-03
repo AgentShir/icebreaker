@@ -13,17 +13,17 @@ class Icebreaker extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      icebreaker: ''
+      icebreakers: []
     }
+    icebreakerRef = fire.database().ref('icebreaker')
   }
 
-  showIcebreaker
-
   componentWillMount() {
-    this.icebreakerRef = base.syncState('icebreakers', {
-      context: this,
-      state: 'icebreakers'
-    });
+    this.icebreakerRef.on('value', data => {
+      this.setState({
+        icebreakers: data.val()
+      })
+    })
   }
 
   componentWillUnmount() {

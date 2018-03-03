@@ -5,7 +5,6 @@
   "dependencies": {
     "enzyme-adapter-react-16": "^1.1.1",
     "firebase": "^4.9.1",
-    "gulp": "^3.9.1",
     "re-base": "^3.2.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
