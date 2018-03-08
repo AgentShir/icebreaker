@@ -7,7 +7,7 @@ import { Container, Header, Grid, Segment } from 'semantic-ui-react';
 import '../styles/App.css';
 
 // Components
-import Icebreaker from './Icebreaker.js';
+import IcebreakerList from './IcebreakerList.js';
 
 class Dashboard extends Component {
   render() {
@@ -19,7 +19,7 @@ class Dashboard extends Component {
               <Grid columns={3}>
                 <Grid.Row>
                   <Grid.Column>
-                      <Icebreaker />
+                      Tester Thing
                   </Grid.Column>
                   <Grid.Column>
                     <Header as='h4'>Sample Icebreaker</Header>

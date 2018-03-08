@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
+
+// Components
+import Icebreaker from './Icebreaker.js';
 
 // Styles
 import '../styles/App.css';
+import { Card } from 'semantic-ui-react';
 
 class IcebreakerList extends Component {
   render() {
     return (
-      <div>IcebreakerList Component</div>
+      <Card>
+        <Card.Content>
+          <Icebreaker>
+            Tester
+          </Icebreaker>
+        </Card.Content>
+      </Card>
     )
   }
 }
