@@ -40,7 +40,6 @@ class App extends Component {
               Submit
             </Button>
           </Form>
-
             <Grid columns={3} centered padded='vertically'>
               <Grid.Row>
                 {
