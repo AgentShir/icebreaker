@@ -7,7 +7,6 @@ import { Container, Header, Grid, Segment } from 'semantic-ui-react';
 import '../styles/App.css';
 
 // Components
-import IcebreakerList from './IcebreakerList.js';
 
 class Dashboard extends Component {
   render() {
