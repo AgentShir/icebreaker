@@ -1,23 +1,34 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 
 // Semantic UI React Components
-import { Button } from 'semantic-ui-react';
+import { Menu } from 'semantic-ui-react';
 
 // Styles
 import '../styles/App.css';
 
 class Top extends Component {
 
-  getRandomIcebreaker = event => {
-    console.log('clicking')
-  }
-
   render() {
     return (
-      <div className="App">
-        <Button basic color='violet' onClick={this.getRandomIcebreaker}>
-          Get an icebreaker!
-        </Button>
+      <div>
+        <Menu color='violet' inverted widths={3}>
+          <Menu.Item>
+            <Link to="/home">
+              Home
+            </Link>
+          </Menu.Item>
+          <Menu.Item>
+            <Link to="/about">
+                About
+            </Link>
+          </Menu.Item>
+          <Menu.Item>
+            <Link to="/signin">
+                Sign In
+            </Link>
+          </Menu.Item>
+        </Menu>
       </div>
     )
   }
