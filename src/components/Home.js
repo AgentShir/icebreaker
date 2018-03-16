@@ -27,13 +27,13 @@ class Home extends Component {
     return (
       <Container textAlign='center'>
           <TopHeader title="Icebreaker" />
-            <Grid columns={3} centered padded='vertically'>
+            <Grid stackable columns={3} centered padded='vertically'>
               <Grid.Row>
                 {
                   this.state.messages.map( message =>
                     <Grid.Column>
                       <Card.Group centered  style={{ padding: '0.8em'}}>
-                        <Card color='violet'>
+                        <Card color='blue'>
                           <Card.Content key={message.id}>
                             {message.text}
                           </Card.Content>

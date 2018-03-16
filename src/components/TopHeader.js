@@ -7,7 +7,7 @@ class TopHeader extends Component {
   render() {
     return (
       <Segment>
-       <Header textAlign='center' color='violet' size='huge'>
+       <Header textAlign='center' color='blue' size='huge'>
         {this.props.title}
        </Header>
       </Segment>

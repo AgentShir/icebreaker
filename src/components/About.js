@@ -9,7 +9,7 @@ class About extends Component {
       <Container>
         <Container textAlign='center'>
           <Container text textAlign='justified'>
-            <Header color='violet' as='h2' textAlign='center' dividing>
+            <Header color='blue' as='h2' textAlign='center' dividing>
               About Icebreaker
             </Header>
               <br />
@@ -18,11 +18,11 @@ class About extends Component {
               <p>Hi, my name is... and my stack is...</p>
               <p>Enter, Icebreaker</p>
               <p>At the moment, Icebreaker has a handful of icebreakers... short questions designed to dig a little deeper into a person.  What are their hobbies?  What do they like?</p>
-            <Header color='violet' as='h2' textAlign='center' dividing>
+            <Header color='blue' as='h2' textAlign='center' dividing>
               Tech Specs
             </Header>
               <p>React, Firebase</p>
-            <Header color='violet' as='h2' textAlign='center' dividing>
+            <Header color='blue' as='h2' textAlign='center' dividing>
               Future Features
             </Header>
               <p>Here are a few features that I hope to eventually add to the app:</p>

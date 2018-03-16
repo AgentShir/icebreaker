@@ -12,7 +12,7 @@ class Top extends Component {
   render() {
     return (
       <div>
-        <Menu color='violet' inverted widths={3}>
+        <Menu color='blue' inverted widths={3}>
           <Menu.Item>
             <Link to="/home">
               Home
