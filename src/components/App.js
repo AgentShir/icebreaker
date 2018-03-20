@@ -8,6 +8,7 @@ import Home from './Home.js';
 import About from './About.js';
 import SignIn from './SignIn.js';
 import Top from './Top.js';
+import Footer from './Footer.js';
 
 // Styles
 import '../styles/App.css';
@@ -22,6 +23,7 @@ class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/signIn" component={SignIn} />
             <Route path="/top" component={Top} />
+            <Route path="/footer" component={Footer} />
           </Switch>
         </Layout>
       </Router>

@@ -9,39 +9,40 @@ import base from '../base';
 // Semantic UI React Components
 import { Container, Grid, Card  } from 'semantic-ui-react';
 
+// lodash functions
+import map from 'lodash/map';
+
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = { messages: [] };
+    this.state = {
+      data: null,
+      authenticated: false
+    }
+    this.messagesRef = base.database().ref('/messages');
   }
 
-  componentWillMount(){
-    let messagesRef = base.database().ref('messages').orderByKey().limitToLast(100);
-    messagesRef.on('child_added', snapshot => {
-      let message = { text: snapshot.val(), id: snapshot.key };
-      this.setState({ messages: [message].concat(this.state.messages) });
+  componentDidMount() {
+    this.messagesRef.on('value', (snapshot) => {
+      console.log(snapshot.val());
     })
   }
 
   render() {
+    const { messages } = this.state;
+
     return (
       <Container textAlign='center'>
           <TopHeader title="Icebreaker" />
             <Grid stackable columns={3} centered padded='vertically'>
               <Grid.Row>
-                {
-                  this.state.messages.map( message =>
-                    <Grid.Column>
-                      <Card.Group centered  style={{ padding: '0.8em'}}>
-                        <Card color='blue'>
-                          <Card.Content key={message.id}>
-                            {message.text}
-                          </Card.Content>
-                        </Card>
-                      </Card.Group>
-                    </Grid.Column>
-                           )
-                      }
+                <Grid.Column>
+                  <Card.Group centered  style={{ padding: '0.8em'}}>
+                    <Card color='blue'>
+                      { map(messages, (message, key) =>  <Card.Content key={key}>{messages.name}</Card.Content>) }
+                    </Card>
+                  </Card.Group>
+                </Grid.Column>
               </Grid.Row>
             </Grid>
           </Container>

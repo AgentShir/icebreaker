@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../styles/App.css';
 
 // Semantic UI React Components
 import { Header, Segment } from 'semantic-ui-react';

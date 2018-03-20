@@ -6,13 +6,12 @@ import { Container, Header, List } from 'semantic-ui-react';
 class About extends Component {
   render() {
     return (
-      <Container>
+      <Container style={{ padding: '1.5em'}}>
         <Container textAlign='center'>
           <Container text textAlign='justified'>
             <Header color='blue' as='h2' textAlign='center' dividing>
               About Icebreaker
             </Header>
-              <br />
               <p>I wish that I could introduce myself using something other than a title...</p>
               <p>As a recent bootcamp grad, I have made the rounds of the local tech MeetUps, introducing myself and getting to know the other developers in the city.  But, I got tired of the basic introductions...</p>
               <p>Hi, my name is... and my stack is...</p>

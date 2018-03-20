@@ -12,11 +12,14 @@ class Top extends Component {
   render() {
     return (
       <div>
-        <Menu color='blue' inverted widths={3}>
+        <Menu color='blue' inverted widths={4}>
           <Menu.Item>
             <Link to="/home">
               Home
             </Link>
+          </Menu.Item>
+          <Menu.Item>
+            Random Icebreaker
           </Menu.Item>
           <Menu.Item>
             <Link to="/about">

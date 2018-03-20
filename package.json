@@ -5,6 +5,7 @@
   "dependencies": {
     "enzyme-adapter-react-16": "^1.1.1",
     "firebase": "^4.9.1",
+    "firebaseui": "^2.6.3",
     "lodash": "^4.17.5",
     "re-base": "^3.2.2",
     "react": "^16.2.0",

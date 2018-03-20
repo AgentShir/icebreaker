@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 // Semantic UI React Components
 import { Segment, Icon } from 'semantic-ui-react';
 
+import '../styles/App.css';
+
 class Footer extends Component {
   render() {
     return (

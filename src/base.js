@@ -12,3 +12,8 @@ const config = {
 const base = firebase.initializeApp(config);
 
 export default base;
+
+// Authentication via FB or Google
+export const auth = firebase.auth();
+export const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+export const facebookAuthProvider = new firebase.auth.FacebookAuthProvider();
