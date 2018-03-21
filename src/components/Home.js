@@ -16,8 +16,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: null,
-      authenticated: false
+      data: null
     }
     this.messagesRef = base.database().ref('/messages');
   }

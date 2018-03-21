@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 import '../styles/App.css';
 
 // Semantic UI React Components
-import { Header, Segment } from 'semantic-ui-react';
+import { Header } from 'semantic-ui-react';
 
 class TopHeader extends Component {
   render() {
     return (
-      <Segment>
-       <Header textAlign='center' color='blue' size='huge'>
+      <div>
+       <Header textAlign='center' color='blue' size='huge' style={{ padding: '0.5em' }}>
         {this.props.title}
        </Header>
-      </Segment>
+     </div>
     )
   }
 }
