@@ -10,12 +10,12 @@ class Footer extends Component {
     return (
       <Segment inverted color='blue' textAlign='right'
       style={{ padding: '1 em' }}>
-        <Icon name='facebook square' size='big' />
-        <Icon name='github square' size='big' />
-        <Icon name='linkedin square' size='big' />
-        <Icon name='youtube' size='big' />
-        <Icon name='instagram' size='big' />
-        <Icon name='wordpress' size='big' />
+        <Icon name='facebook square' size='big' disabled />
+        <Icon name='github square' size='big' disabled />
+        <Icon name='linkedin square' size='big' disabled />
+        <Icon name='youtube' size='big' disabled />
+        <Icon name='instagram' size='big' disabled />
+        <Icon name='wordpress' size='big' disabled />
       </Segment>
     )
   }

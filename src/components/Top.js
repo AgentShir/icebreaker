@@ -18,7 +18,7 @@ class Top extends Component {
               Home
             </Link>
           </Menu.Item>
-          <Menu.Item>
+          <Menu.Item disabled>
             Random Icebreaker
           </Menu.Item>
           <Menu.Item>
@@ -27,8 +27,8 @@ class Top extends Component {
             </Link>
           </Menu.Item>
           <Menu.Item>
-            <Link to="/signin">
-                Sign In
+            <Link to="/admin">
+                Admin
             </Link>
           </Menu.Item>
         </Menu>

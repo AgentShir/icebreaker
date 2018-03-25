@@ -6,26 +6,46 @@ import base from '../base';
 // Semantic UI React Components
 import { Container, Form, Button } from 'semantic-ui-react';
 
+// trim - trims string whitespace
+import trim from 'trim';
+
 class IcebreakerForm extends Component {
   constructor(props) {
     super(props);
-    this.state = { messages: [] }
+    this.onChange = this.onChange.bind(this);
+    this.onKeyup = this.onKeyup.bind(this);
+    this.state = {
+      icebreaker: ''
+    }
   }
 
-  addMessage(e){
-    e.preventDefault();
-    base.database().ref('messages').push( this.inputEl.value );
-    this.inputEl.value = '';
+  onChange(e){
+    this.setState({
+      icebreaker: e.target.value
+    })
+  }
+
+  onKeyup(e){
+    if(e.keyCode === 13 && trim(e.target.value) !== ''){
+      e.preventDefault();
+      var newIcebreaker = base.database().ref('/icebreakers');
+      newIcebreaker.push({
+        icebreaker: trim(e.target.value)
+      })
+      this.setState({
+        icebreaker: ''
+      })
+    }
   }
 
   render() {
     return (
-      <Container>
-        <Form size='small' onSubmit={this.addMessage.bind(this)}>
-          <Form.Field>
-            <input placeholder="Type Icebreaker Here" type="text" ref={ el => this.inputEl = el } />
+      <Container style={{ padding: '1.5em'}}>
+        <Form size='small'>
+          <Form.Field style={{ width: '50%'}}>
+            <Form.Input placeholder="Type Icebreaker Here" type="text" onChange={this.onChange} onKeyUp={this.onKeyup} value={this.state.icebreaker} />
           </Form.Field>
-          <Button size='mini' basic color='violet' input type='submit'>
+          <Button size='mini' basic color='blue' input type='submit'>
           Submit
           </Button>
         </Form>
