@@ -26,10 +26,10 @@ class Top extends Component {
                 About
             </Link>
           </Menu.Item>
-          <Menu.Item disabled>
-            {/*<Link to="/signin">*/}
-                Sign In
-            {/*</Link>*/}
+          <Menu.Item>
+            <Link to="/admin">
+                Admin
+            </Link>
           </Menu.Item>
         </Menu>
       </div>

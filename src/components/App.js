@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Layout from './Layout.js';
 import Home from './Home.js';
 import About from './About.js';
-import SignIn from './SignIn.js';
+import Admin from './Admin.js';
 import Top from './Top.js';
 import Footer from './Footer.js';
 
@@ -21,7 +21,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/home" component={Home} />
             <Route path="/about" component={About} />
-            <Route path="/signIn" component={SignIn} />
+            <Route path="/admin" component={Admin} />
             <Route path="/top" component={Top} />
             <Route path="/footer" component={Footer} />
           </Switch>
