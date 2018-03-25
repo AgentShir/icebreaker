@@ -7,7 +7,7 @@ import { Container, Header, Form, Button, Icon } from 'semantic-ui-react';
 import '../styles/App.css';
 
 // Authentication Methods
-import { auth, googleAuthProvider, facebookAuthProvider } from '../base';
+import { auth, googleAuthProvider } from '../base';
 
 class SignIn extends Component {
   render() {
@@ -20,10 +20,10 @@ class SignIn extends Component {
                   <Icon name='google' />
                     Google Sign In
                 </Button>
-                <Button color='blue' type='submit' onClick={() => auth.signInWithPopup(facebookAuthProvider)}>
+                {/*}<Button color='blue' type='submit' onClick={() => auth.signInWithPopup(facebookAuthProvider)}>
                   <Icon name='facebook f' />
                   Facebook Sign In
-                </Button>
+                </Button>*/}
               </Form>
           </Container>
         </Container>
