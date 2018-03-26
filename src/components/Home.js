@@ -33,13 +33,11 @@ class Home extends Component {
       return (
         <Container textAlign='center'>
           <TopHeader title="Icebreaker" />
-            <Grid stackable columns={3} centered padded='vertically'>
+            <Grid stackable centered padded='vertically'>
               <Grid.Row>
                 <Grid.Column>
-                  <Card.Group centered style={{ padding: '0.8em' }}>
-                    <Card color='blue'>
-                      { map(icebreakers, (icebreaker, key) => <Card.Content key={key}>{ icebreaker.icebreaker }</Card.Content>)}
-                    </Card>
+                  <Card.Group itemsPerRow={3} centered style={{ padding: '0.3em' }}>
+                    { map(icebreakers, (icebreaker, key) => <Card color='blue'><Card.Content key={key} style={{ fontSize: '1.3em' }}>{ icebreaker.icebreaker }</Card.Content></Card>)}
                   </Card.Group>
                 </Grid.Column>
               </Grid.Row>
