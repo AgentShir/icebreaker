@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
-
 body {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
 }
 
 .App {
