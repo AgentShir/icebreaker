@@ -36,7 +36,7 @@ class Home extends Component {
             <Grid stackable centered padded='vertically'>
               <Grid.Row>
                 <Grid.Column>
-                  <Card.Group itemsPerRow={3} centered style={{ padding: '0.3em' }}>
+                  <Card.Group centered itemsPerRow={3} style={{ padding: '0.3em' }}>
                     { map(icebreakers, (icebreaker, key) => <Card color='blue'><Card.Content key={key} style={{ fontSize: '1.3em' }}>{ icebreaker.icebreaker }</Card.Content></Card>)}
                   </Card.Group>
                 </Grid.Column>
