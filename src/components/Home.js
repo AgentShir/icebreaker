@@ -8,7 +8,7 @@ import Icebreaker from './Icebreaker.js';
 import base from '../base';
 
 // Semantic UI React Components
-import { Container, Grid, Card  } from 'semantic-ui-react';
+import { Container, Grid, Card } from 'semantic-ui-react';
 
 // Lodash
 import map from 'lodash/map';
