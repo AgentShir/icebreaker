@@ -20,10 +20,6 @@ class SignIn extends Component {
                   <Icon name='google' />
                     Google Sign In
                 </Button>
-                {/*}<Button color='blue' type='submit' onClick={() => auth.signInWithPopup(facebookAuthProvider)}>
-                  <Icon name='facebook f' />
-                  Facebook Sign In
-                </Button>*/}
               </Form>
           </Container>
         </Container>

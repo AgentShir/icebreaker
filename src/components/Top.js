@@ -12,9 +12,9 @@ class Top extends Component {
   render() {
     return (
       <div>
-        <Menu color='blue' inverted widths={4}>
+        <Menu color='blue' inverted widths={5}>
           <Menu.Item>
-            <Link to="/home">
+            <Link to="/">
               Home
             </Link>
           </Menu.Item>
@@ -27,10 +27,15 @@ class Top extends Component {
             </Link>
           </Menu.Item>
           <Menu.Item>
-            <Link to="/admin">
-                Admin
+            <Link to="/signin">
+              Sign In
             </Link>
-          </Menu.Item>
+            </Menu.Item>
+            <Menu.Item>
+              <Link to="/admin">
+                Admin
+              </Link>
+            </Menu.Item>
         </Menu>
       </div>
     )
