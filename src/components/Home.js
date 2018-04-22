@@ -24,7 +24,7 @@ class Home extends Component {
 
   componentDidMount() {
     this.icebreakersRef.on('value', (snapshot) => {
-      this.setState({ icebreakers: snapshot.val()  })
+      this.setState({ icebreakers: snapshot.val() })
     })
   }
 
