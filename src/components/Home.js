@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 // Components
 import TopHeader from './TopHeader.js';
-import Icebreaker from './Icebreaker.js';
 
 // Database
 import base from '../base';

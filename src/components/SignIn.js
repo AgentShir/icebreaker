@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Admin from './Admin.js'
+import CurrentUser from './CurrentUser.js';
 
 // Semantic UI React Components
-import { Container, Header, Button, Icon } from 'semantic-ui-react';
+import { Container, Button, Icon } from 'semantic-ui-react';
 
 // Styles
 import '../styles/App.css';
@@ -34,7 +34,7 @@ class SignIn extends Component {
                 <Icon name='google' />
                   Google Sign In
               </Button>}
-              {currentUser && <div><Header color='blue' as='h1' textAlign='center'>Input Icebreaker Here</Header><Admin user={currentUser} /></div>}
+              {currentUser && <div><CurrentUser user={currentUser} /></div>}
           </Container>
         </Container>
     )

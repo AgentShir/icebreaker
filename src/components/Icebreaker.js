@@ -9,9 +9,9 @@ import '../styles/App.css';
 class Icebreaker extends Component {
   render() {
     return (
-      <div>
+      <Card>
         {this.props.icebreaker}
-      </div>  
+      </Card>
     )
   }
 }
