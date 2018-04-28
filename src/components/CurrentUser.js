@@ -13,7 +13,7 @@ const CurrentUser = ({ user }) => {
     <Header as='h3'>
         <Image circular src={ user.photoURL } alt={ user.displayName } />
               { user.displayName } is logged in.
-        <Header color='blue' as='h1' textAlign='center'>Input Icebreaker Here</Header>
+        <Header color='blue' as='h1' textAlign='center'>Input Icebreaker</Header>
         <IcebreakerForm />
     </Header>
   )

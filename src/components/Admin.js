@@ -10,7 +10,7 @@ class Admin extends Component {
   render() {
     return (
       <Container>
-        <IcebreakerForm/>
+        <IcebreakerForm />
       </Container>
     )
   }
