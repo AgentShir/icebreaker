@@ -10,9 +10,9 @@ import '../styles/App.css';
 
 const CurrentUser = ({ user }) => {
   return (
-    <Header as='h3'>
+    <Header as='h5' color='blue'>
         <Image circular src={ user.photoURL } alt={ user.displayName } />
-              { user.displayName } is logged in.
+          { user.displayName } is logged in.
         <Header color='blue' as='h1' textAlign='center'>Input Icebreaker</Header>
         <IcebreakerForm />
     </Header>

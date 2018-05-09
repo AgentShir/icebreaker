@@ -32,6 +32,7 @@ class Top extends Component {
             </Link>
             </Menu.Item>
         </Menu>
+        {/* TODO: Sign In shows if not signed in, Sign Out shows if logged in. Maybe a ternary operator? */}
       </div>
     )
   }
