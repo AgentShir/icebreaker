@@ -11,7 +11,7 @@ When introducing myself in a tech capacity, my first thought is to talk about my
 ### In the Works:
 * Icebreaker suggestion "box"
 * Group icebreakers
-* Icebreaker quiz Credit: [https://github.com/rossjcoop](Ross Cooper)
+* Icebreaker quiz (Credit: [Ross Cooper](https://github.com/rossjcoop))
 * Random Icebreaker
 
 #### Icebreaker uses:
