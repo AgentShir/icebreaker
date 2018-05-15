@@ -6,6 +6,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "firebase": "^4.9.1",
     "firebaseui": "^2.6.3",
+    "hoek": "5",
     "lodash": "^4.17.5",
     "prop-types": "^15.6.1",
     "re-base": "^3.2.2",
