@@ -14,7 +14,7 @@ When introducing myself in a tech capacity, my first thought is to talk about my
 * Icebreaker quiz (Credit: [Ross Cooper](https://github.com/rossjcoop))
 * Random Icebreaker
 
-#### Icebreaker uses:
+### Tech:
 * React
 * Firebase Database
 * Firebase Authentication
