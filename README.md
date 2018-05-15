@@ -2,7 +2,23 @@
 
 ***I wish I could introduce myself using something other than a title...***
 
+As a new developer, I've made the rounds of local MeetUps and hackathons, meeting the rest of the local tech community.  As a former legislative intern, I've found that I prefer more genuine connections.  What's the happy medium between the two?
 
+### Enter Icebreaker.  
+
+When introducing myself in a tech capacity, my first thought is to talk about my stack.  But... I'm more than my stack and so are the people that I meet.  Icebreaker contains a variety of questions that help people get to know each other. What's your favorite animal? What color is a polar bear? What hill would you die on and why?
+
+### In the Works:
+* Icebreaker suggestion "box"
+* Group icebreakers
+* Icebreaker quiz (Credit: [https://github.com/rossjcoop](Ross Cooper))
+* Random Icebreaker
+
+#### Icebreaker uses:
+* React
+* Firebase Database
+* Firebase Authentication
+* Semantic UI React  
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
