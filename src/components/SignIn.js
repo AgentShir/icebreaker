@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import CurrentUser from './CurrentUser.js';
 
+// Authentication Methods
+import { auth, googleAuthProvider } from '../base';
+
 // Semantic UI React Components
-import { Container, Button, Icon } from 'semantic-ui-react';
+import { Container, Icon, Button } from 'semantic-ui-react';
 
 // Styles
 import '../styles/App.css';
-
-// Authentication Methods
-import { auth, googleAuthProvider } from '../base';
 
 class SignIn extends Component {
   constructor(props) {
