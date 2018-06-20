@@ -18,8 +18,10 @@ class Top extends Component {
               Home
             </Link>
           </Menu.Item>
-          <Menu.Item disabled>
+          <Menu.Item>
+            <Link to="/random">
             Random Icebreaker
+            </Link>
           </Menu.Item>
           <Menu.Item>
             <Link to="/about">
