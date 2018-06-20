@@ -4,10 +4,10 @@ import React, { Component } from 'react';
 import base from '../base';
 
 // Semantic UI React Components
-import { Button, Container } from 'semantic-ui-react';
+import { Button, Container, Card } from 'semantic-ui-react';
 
 // Lodash
-import sample from 'lodash/sample';
+import  sample  from 'lodash';
 
 
 class Random extends Component {
@@ -15,7 +15,7 @@ class Random extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      icebreaker: null
+      icebreakers: null
     }
     this.breakerRef = base.database().ref('/icebreakers');
   }
@@ -28,17 +28,25 @@ class Random extends Component {
 
   onClick() {
     // Using sample function from lodash
-    sample(this.breakerRef);
-    console.log('A thing is happening!');
+    var breakIce = sample(this.breakerRef, 1);
+    console.log('A thing is happening!', breakIce);
   }
 
   render() {
+    const { icebreakers } = this.state;
     return (
       <Container style={{ padding: '1.5em'}} textAlign='center'>
-        <Button onClick={this.onClick} basic color='blue'>
+        <Button basic color='blue' onClick={this.onClick}>
           Click Here To Get A Random Icebreaker
         </Button>
-        <div><h1>Things will display here</h1></div>
+        <Container>
+          <Card color='blue'>
+            <Card.Content style={{ fontSize: '1.3em' }}>
+              {/* Where did I see this before? */}
+              {/* { sample(icebreakers, (icebreaker, key) =>  key={key} { icebreaker.icebreaker })} */}
+            </Card.Content>
+          </Card>
+        </Container>
       </Container>
     )
   }
