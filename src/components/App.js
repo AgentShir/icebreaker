@@ -10,6 +10,7 @@ import Admin from './Admin.js';
 import Top from './Top.js';
 import Footer from './Footer.js';
 import SignIn from './SignIn.js';
+import Random from './Random.js';
 
 // Styles
 import '../styles/App.css';
@@ -26,6 +27,7 @@ class App extends Component {
             <Route path="/signin" component={SignIn} />
             <Route path="/top" component={Top} />
             <Route path="/footer" component={Footer} />
+            <Route path="/random" component={Random} />
           </Switch>
         </Layout>
       </Router>
