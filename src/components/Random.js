@@ -4,10 +4,10 @@ import React, { Component } from 'react';
 import base from '../base';
 
 // Semantic UI React Components
-import { Button, Container, Card } from 'semantic-ui-react';
+import { Button, Container } from 'semantic-ui-react';
 
 // Lodash
-import  sample  from 'lodash';
+import sample from 'lodash/sample';
 
 
 class Random extends Component {
@@ -17,36 +17,33 @@ class Random extends Component {
     this.state = {
       icebreakers: null
     }
-    this.breakerRef = base.database().ref('/icebreakers');
+    // Connect to firebase
+    this.breakerRef = base.database().ref('/icebreakers').limitToFirst(1);
   }
 
   componentDidMount() {
-    this.breakerRef.on('value', (snapshot) => {
-      this.setState({ icebreaker: snapshot.val() })
+    var icebreaker = this.breakerRef.on('value', snapshot => {
+      console.log(snapshot.val(), 'Look! A thing!');
     })
+    return icebreaker;
   }
 
-  onClick() {
-    // Using sample function from lodash
-    var breakIce = sample(this.breakerRef, 1);
-    console.log('A thing is happening!', breakIce);
-  }
+  testEvent(event) {
+      console.log('A thing is happening!');
+    }
 
   render() {
     const { icebreakers } = this.state;
     return (
       <Container style={{ padding: '1.5em'}} textAlign='center'>
-        <Button basic color='blue' onClick={this.onClick}>
+        <Button basic color='blue' onClick={this.testEvent}>
           Click Here To Get A Random Icebreaker
         </Button>
-        <Container>
-          <Card color='blue'>
-            <Card.Content style={{ fontSize: '1.3em' }}>
-              {/* Where did I see this before? */}
-              {/* { sample(icebreakers, (icebreaker, key) =>  key={key} { icebreaker.icebreaker })} */}
-            </Card.Content>
-          </Card>
-        </Container>
+          <Container>
+            <div>
+              <h4>Random icebreaker here</h4>
+            </div>
+          </Container>
       </Container>
     )
   }
