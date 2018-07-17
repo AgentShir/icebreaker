@@ -28,6 +28,7 @@ class App extends Component {
             <Route path="/signin" component={SignIn} />
             <Route path="/top" component={Top} />
             <Route path="/footer" component={Footer} />
+            <Route path="/random" component={Random} />
           </Switch>
         </Layout>
       </Router>
