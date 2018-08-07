@@ -29,7 +29,6 @@ class Home extends Component {
 
   render() {
     const { icebreakers } = this.state;
-    console.log(icebreakers);
       return (
         <Container textAlign='center'>
           <TopHeader title="Icebreaker" />
