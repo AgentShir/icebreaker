@@ -19,6 +19,9 @@ When introducing myself in a tech capacity, my first thought is to talk about my
 * Firebase Database
 * Firebase Authentication
 * Semantic UI React  
+
+### Currently:
+October 31, 2018 - Don't worry, I haven't abandoned this project! I started a new job and I've been getting up to speed on that.  I intend to start playing with this again soon!
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
