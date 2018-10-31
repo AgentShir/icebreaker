@@ -9,6 +9,8 @@ import { Button, Container } from 'semantic-ui-react';
 // Lodash
 import sample from 'lodash/sample';
 
+// Redux is a possible solution.  Will try when I have more time.
+
 
 class Random extends Component {
 
